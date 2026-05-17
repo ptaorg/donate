@@ -1,18 +1,15 @@
-PTA適正化推進委員会 PayPayリンク修正版
+PTA適正化推進委員会 PayPayリンク差し替え版
 
-更新内容
-- donate.html のPayPayリンクを新URLへ差し替えました。
-- 新PayPay URL: https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV
-- ボタンが開かない場合のため、同じURLを本文にも表示しています。
-- /donate/ で開いた場合も donate.html へ転送する donate/index.html を同梱しています。
+内容:
+- 新PayPay URL: https://qr.paypay.ne.jp/p2p01_7qyY46XqZxGgVsQw
+- donate.html のPayPayボタンと代替表示URLを差し替え済みです。
+- donate/index.html は donate.html へ転送する補助ページです。
+- patch_paypay_links.py は既存サイト内の古いPayPayリンクを新URLへ一括置換する補助スクリプトです。
 
-既存サイトへの反映方法
-1. このZIPを既存サイトのルート、つまり index.html がある場所へ展開してください。
-2. donate.html と donate/index.html を上書きしてください。
-3. 既存ページ内に古いPayPayリンクが残っている可能性がある場合は、同じ場所で patch_paypay_links.py を実行してください。
-   - Windows: RUN_PATCH_WINDOWS.bat
-   - Mac/Linux: RUN_PATCH_MAC_LINUX.sh
+使い方:
+1. ZIPを展開します。
+2. 既存サイトのルートに donate.html と donate/ を上書き配置します。
+3. 既存サイト全体の古いPayPayリンクも置換したい場合は、既存サイトのルートで patch_paypay_links.py を実行します。
 
-確認済み事項
-- donate.html 内のPayPayリンクは、指定された新URLだけです。
-- href属性内に余計な空白や改行は入れていません。
+注意:
+PayPayの個人送金リンク／QRは期限切れになる場合があります。期限切れ時はPayPayアプリで新しいリンクを取得し、このURLを再度差し替えてください。

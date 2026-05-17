@@ -1,12 +1,18 @@
 {
-  "new_url": "https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV",
+  "new_url": "https://qr.paypay.ne.jp/p2p01_7qyY46XqZxGgVsQw",
   "donate_html_new_url_count": 3,
-  "donate_html_known_old_url_counts": {
+  "donate_html_old_url_counts": {
     "https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p": 0,
-    "https://qr.paypay.ne.jp/p2p01_G9Jr8B9j01wcCN0u": 0
+    "https://qr.paypay.ne.jp/p2p01_G9Jr8B9j01wcCN0u": 0,
+    "https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV": 0
   },
-  "all_html_paypay_urls": [
-    "https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV"
+  "html_old_url_counts": {
+    "https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p": 0,
+    "https://qr.paypay.ne.jp/p2p01_G9Jr8B9j01wcCN0u": 0,
+    "https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV": 0
+  },
+  "html_paypay_urls": [
+    "https://qr.paypay.ne.jp/p2p01_7qyY46XqZxGgVsQw"
   ],
   "html_file_count": 2
 }
