@@ -1,173 +1,183 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ご支援（寄付）のお願い - PTA適正化推進委員会</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        h1 {
-            font-size: 1.4em;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 12px;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-        h2 {
-            font-size: 1.2em;
-            color: #2c3e50;
-            margin-top: 40px;
-            border-left: 4px solid #3498db;
-            padding-left: 12px;
-        }
-        p {
-            margin-bottom: 1em;
-            font-size: 0.95em;
-        }
-        .usage-list {
-            margin-bottom: 30px;
-        }
-        .usage-list h3 {
-            font-size: 1.05em;
-            color: #d35400;
-            margin-bottom: 5px;
-            margin-top: 20px;
-        }
-        .usage-list p {
-            margin-left: 10px;
-            margin-bottom: 15px;
-            font-size: 0.9em;
-            color: #555;
-            background: #fdfaf7;
-            padding: 10px;
-            border-radius: 4px;
-            border-left: 3px solid #e67e22;
-        }
-        .payment-box {
-            background: #f0f8ff;
-            border: 1px solid #cce7ff;
-            border-radius: 8px;
-            padding: 25px;
-            margin-top: 40px;
-        }
-        .payment-box h2 {
-            margin-top: 0;
-            border: none;
-            padding: 0;
-            text-align: center;
-            color: #2980b9;
-        }
-        .payment-method {
-            margin-top: 20px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 6px;
-        }
-        .payment-method h3 {
-            margin-top: 0;
-            color: #333;
-            font-size: 1.1em;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-        .bank-info {
-            font-size: 1.1em;
-            letter-spacing: 0.5px;
-            line-height: 1.6;
-        }
-        .paypay-btn {
-            display: block;
-            background-color: #ff0033;
-            color: #fff;
-            text-decoration: none;
-            padding: 14px 24px;
-            border-radius: 30px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 15px;
-            transition: background-color 0.3s;
-        }
-        .paypay-btn:hover {
-            background-color: #cc0029;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: right;
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1.1em;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-            .payment-box {
-                padding: 15px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご支援（寄付）のお願い - PTA適正化推進委員会</title>
+  <style>
+    :root {
+      --bg: #f4f7f6;
+      --text: #24313a;
+      --muted: #5c6b73;
+      --line: #d9e7ef;
+      --blue: #2f80ed;
+      --orange: #d35400;
+      --paypay: #ff0033;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+      line-height: 1.85;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 42px;
+      background: #fff;
+      border: 1px solid #edf2f5;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(20, 40, 60, .07);
+    }
+    h1 {
+      margin: 0 0 28px;
+      padding-bottom: 16px;
+      font-size: 1.55rem;
+      line-height: 1.45;
+      text-align: center;
+      border-bottom: 3px solid var(--blue);
+      color: #1f3b57;
+    }
+    h2 {
+      margin: 38px 0 18px;
+      padding-left: 12px;
+      font-size: 1.2rem;
+      border-left: 5px solid var(--blue);
+      color: #1f3b57;
+    }
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 1.05rem;
+      color: var(--orange);
+    }
+    p { margin: 0 0 1em; font-size: .96rem; }
+    .usage-card {
+      margin: 10px 0 18px;
+      padding: 14px 16px;
+      background: #fff9f3;
+      border-left: 4px solid #e67e22;
+      border-radius: 8px;
+      color: #4f5960;
+      font-size: .93rem;
+    }
+    .payment-box {
+      margin-top: 38px;
+      padding: 26px;
+      background: #f1f8ff;
+      border: 1px solid #cfe6ff;
+      border-radius: 12px;
+    }
+    .payment-box h2 {
+      margin-top: 0;
+      padding-left: 0;
+      border-left: 0;
+      text-align: center;
+      color: #2569a8;
+    }
+    .payment-method {
+      margin-top: 18px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #edf2f5;
+      border-radius: 10px;
+    }
+    .payment-method h3 {
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #edf2f5;
+      color: #27343c;
+    }
+    .bank-info {
+      margin: 0;
+      font-size: 1.08rem;
+      letter-spacing: .03em;
+      line-height: 1.7;
+    }
+    .paypay-btn {
+      display: block;
+      width: 100%;
+      margin-top: 14px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      background: var(--paypay);
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .paypay-btn:hover, .paypay-btn:focus {
+      background: #cc0029;
+      color: #fff;
+    }
+    .fallback-url {
+      overflow-wrap: anywhere;
+      word-break: break-all;
+      margin-top: 12px;
+      font-size: .86rem;
+      color: var(--muted);
+    }
+    .fallback-url a { color: #245f9f; }
+    .footer {
+      margin-top: 40px;
+      text-align: right;
+      font-weight: 700;
+      color: #1f3b57;
+    }
+    @media (max-width: 640px) {
+      body { padding: 14px; }
+      .container { padding: 24px 18px; }
+      h1 { font-size: 1.32rem; }
+      .payment-box { padding: 18px; }
+      .payment-method { padding: 16px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>PTA適正化推進委員会への<br>ご支援（寄付）のお願い</h1>
+  <main class="container">
+    <h1>PTA適正化推進委員会への<br>ご支援（寄付）のお願い</h1>
 
-        <p>日頃より当委員会の活動に対し、多大なるご理解とご協力を賜り、厚く御礼申し上げます。</p>
-        <p>本委員会は、誰もが参加しやすい健全なPTA運営の実現と、教育環境に資する組織の最適化を目指し、法的根拠に基づいた調査・分析および提言活動を全国規模で展開しております。</p>
-        <p>当委員会は発足以来、活動の独立性と公平性を保つため、運営および調査にかかる全ての費用を完全にメンバーの自己負担（手出し）のみで賄ってまいりました。本来であれば、今後も自費のみで活動を完結させたいという強い思いを持っておりましたが、活動の全国的な広がりとともに、現地調査や公文書開示請求などの実務経費が想定を遥かに上回る規模となっております。</p>
-        <p>今後も活動の質を落とすことなく、持続可能な形でPTAのあるべき姿を追求していくため、誠に恐縮ながら、皆様の温かいご支援を仰ぐ運びとなりました。</p>
-        <p>お寄せいただいた貴重なご支援は、主に以下の活動費用として適正かつ大切に活用させていただきます。</p>
+    <p>日頃より当委員会の活動に対し、多大なるご理解とご協力を賜り、厚く御礼申し上げます。</p>
+    <p>本委員会は、誰もが参加しやすい健全なPTA運営の実現と、教育環境に資する組織の最適化を目指し、法的根拠に基づいた調査・分析および提言活動を全国規模で展開しております。</p>
+    <p>当委員会は発足以来、活動の独立性と公平性を保つため、運営および調査にかかる費用をメンバーの自己負担により賄ってまいりました。しかし、活動の全国的な広がりとともに、現地調査、公文書開示請求、資料整理、情報発信基盤の維持に必要な実務経費が増加しております。</p>
+    <p>今後も活動の質を落とすことなく、持続可能な形でPTA運営の適正化を追求していくため、誠に恐縮ながら、皆様の温かいご支援をお願い申し上げます。</p>
 
-        <h2>主な使途</h2>
-        <div class="usage-list">
-            <h3>実態調査・提言活動にかかる経費</h3>
-            <p>全国各地の教育委員会や先行事例を持つ自治体への訪問調査、現場でのヒアリング、および直接的な適正化提言を行うための交通費・宿泊費等に充てさせていただきます。</p>
+    <h2>主な使途</h2>
 
-            <h3>公文書開示請求・法的エビデンスの収集費用</h3>
-            <p>客観的事実に基づいた提言を行うため、各自治体・教育委員会に対する公文書開示請求の手数料や郵送代、および専門的な調査に必要な諸費用として活用いたします。</p>
+    <h3>実態調査・提言活動にかかる経費</h3>
+    <p class="usage-card">全国各地の教育委員会や先行事例を持つ自治体への訪問調査、現場でのヒアリング、直接的な適正化提言を行うための交通費・宿泊費等に充てさせていただきます。</p>
 
-            <h3>情報発信基盤（サーバー・インフラ）の維持管理費</h3>
-            <p>調査結果や適正化に向けたノウハウを広く一般に公開し、持続可能な情報提供を行うためのサーバー維持費、ドメイン管理費、システムメンテナンス費用に充当いたします。</p>
-        </div>
+    <h3>公文書開示請求・法的エビデンスの収集費用</h3>
+    <p class="usage-card">客観的事実に基づいた提言を行うため、各自治体・教育委員会に対する公文書開示請求の手数料や郵送代、専門的な調査に必要な諸費用として活用いたします。</p>
 
-        <p>公平で透明性の高い調査活動を継続し、PTA運営の適正化をさらに加速させていくため、何卒ご理解とご協力のほど、心よりお願い申し上げます。</p>
+    <h3>情報発信基盤の維持管理費</h3>
+    <p class="usage-card">調査結果や適正化に向けた資料を広く公開し、持続可能な情報提供を行うためのサーバー維持費、ドメイン管理費、システムメンテナンス費用に充当いたします。</p>
 
-        <div class="payment-box">
-            <h2>ご支援窓口</h2>
+    <p>公平で透明性の高い調査活動を継続し、PTA運営の適正化をさらに加速させていくため、何卒ご理解とご協力のほど、心よりお願い申し上げます。</p>
 
-            <div class="payment-method">
-                <h3>■ 銀行振込</h3>
-                <p class="bank-info">
-                    <strong>住信SBIネット銀行</strong><br>
-                    メロン支店（普） 6978317<br>
-                </p>
-            </div>
+    <section class="payment-box" aria-labelledby="support-window-title">
+      <h2 id="support-window-title">ご支援窓口</h2>
 
-            <div class="payment-method">
-                <h3>■ PayPay</h3>
-                <p style="font-size: 0.9em; color: #555;">以下のボタンをタップすると、PayPayアプリが起動し送金画面へ進みます。</p>
-                <a href="https://qr.paypay.ne.jp/p2p01_G9Jr8B9j01wcCN0u" class="paypay-btn" target="_blank" rel="noopener noreferrer">PayPayアプリで支援する</a>
-            </div>
-        </div>
+      <div class="payment-method">
+        <h3>■ 銀行振込</h3>
+        <p class="bank-info">
+          <strong>住信SBIネット銀行</strong><br>
+          メロン支店（普通） 6978317
+        </p>
+      </div>
 
-        <div class="footer">
-            PTA適正化推進委員会
-        </div>
-    </div>
+      <div class="payment-method">
+        <h3>■ PayPay</h3>
+        <p>以下のボタンをタップすると、PayPayの送金ページへ進みます。</p>
+        <a class="paypay-btn" href="https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV" target="_blank" rel="noopener noreferrer">PayPayで支援する</a>
+        <p class="fallback-url">ボタンが開かない場合：<a href="https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV" target="_blank" rel="noopener noreferrer">https://qr.paypay.ne.jp/p2p01_C2WQJYLTMuGv3hmV</a></p>
+      </div>
+    </section>
+
+    <div class="footer">PTA適正化推進委員会</div>
+  </main>
 </body>
 </html>

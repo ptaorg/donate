@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 patch_paypay_and_support_menu.py
+python3 patch_paypay_links.py

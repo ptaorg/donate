@@ -1,3 +1,3 @@
 @echo off
-py patch_paypay_and_support_menu.py
+py patch_paypay_links.py
 pause
